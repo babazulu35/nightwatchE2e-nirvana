@@ -1,0 +1,14 @@
+{
+    "name": "nirvana-e2e",
+    "version": "1.0.0",
+    "description": "",
+    "main": "nightwatch.js",
+    "scripts": {
+        "test": "node nightwatch --group logingroup --group performer-create -e chrome"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "nightwatch": "^0.9.19"
+    }
+}
