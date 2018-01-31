@@ -1,12 +1,12 @@
 module.exports = {
-    username: 'xx',
-    password: 'xx',
-    apiKey: 'xx',
-    terminalId: 'x',
-    channelCode: 'xx',
-    firmCode: 'xx',
+    username: 'mobilet',
+    password: 'nirvana',
+    apiKey: '11',
+    terminalId: '1',
+    channelCode: 'Web',
+    firmCode: 'MBT',
     urls: {
-        test: 'xx',
-        dev: 'xx'
+        test: 'https://backstage-test.mobilet.com',
+        dev: 'https://backstage-stage.mobilet.com'
     }
 }

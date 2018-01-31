@@ -1,4 +1,4 @@
-# Kurulum için gerekenler
+# E2E Testi için yapılması gerekenler
 
 ` npm install `
 - nightwatch.js altında gerekli pathler düzenlenebilir.
