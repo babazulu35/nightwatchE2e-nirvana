@@ -4,7 +4,9 @@
     "custom_commands_path": "",
     "custom_assertions_path": "",
     "page_objects_path": "",
-    "globals_path": "dev.js",
+
+    "globals_path": "globals.js",
+
 
     "selenium": {
         "start_process": true,
@@ -17,7 +19,15 @@
             "webdriver.edge.driver": ""
         }
     },
-
+    "test_runner": {
+        "type": "mocha",
+        "options": {
+            "reporter": "mochawesome",
+            "reporterOptions": {
+                "reportName": "Detaylı Test Raporu"
+            }
+        }
+    },
     "test_settings": {
         "default": {
             "launch_url": "http://localhost",
@@ -26,7 +36,10 @@
             "silent": true,
             "screenshots": {
                 "enabled": true,
+                "on_failure": false,
+                "on_error": false,
                 "path": "sshot"
+
             },
             "desiredCapabilities": {
                 "browserName": "firefox",
@@ -37,6 +50,14 @@
         "chrome": {
             "desiredCapabilities": {
                 "browserName": "chrome"
+            },
+            "screenshots": {
+                "enabled": true,
+                "on_success": true,
+                "on_failure": true,
+                "on_error": true,
+                "path": "sshot"
+
             }
         },
 

@@ -1,0 +1,70 @@
+{
+	"passed": 1,
+	"failed": 1,
+	"errors": 0,
+	"skipped": 0,
+	"tests": 2,
+	"errmessages": [],
+	"modules": {
+		"tests/logingroup/nirvanaLogin": {
+			"completed": {
+				"Login Page": {
+					"passed": 0,
+					"failed": 1,
+					"errors": 0,
+					"skipped": 0,
+					"assertions": [
+						{
+							"message": "Timed out while waiting for element <app-login> to be present for 1000 milliseconds.",
+							"stackTrace": "    at Object.Login Page (/Users/hakanhurriyet/Desktop/PROJECTS/nirvana-e2e/tests/logingroup/nirvanaLogin.js:8:14)\n    at process._tickCallback (internal/process/next_tick.js:150:11)",
+							"fullMsg": "Timed out while waiting for element <app-login> to be present for 1000 milliseconds. \u001b[1;37m - expected \u001b[0;32m\"found\"\u001b[0m\u001b[0m but got: \u001b[0;31m\"not found\"\u001b[0m",
+							"failure": "Expected \"found\" but got: \"not found\""
+						}
+					],
+					"timeMs": 12852,
+					"time": "12.85"
+				}
+			},
+			"skipped": [
+				"Get Error Message On Empty Submit",
+				"Set Login Data And Press ENTER Key "
+			],
+			"time": "12.85",
+			"timestamp": "Mon, 05 Feb 2018 19:23:46 GMT",
+			"group": "logingroup",
+			"tests": 3,
+			"errmessages": [],
+			"failures": 1,
+			"errors": 0
+		},
+		"tests/performer-create/performer-create": {
+			"completed": {
+				"Varlık Yönetimi Tıklama": {
+					"passed": 1,
+					"failed": 0,
+					"errors": 0,
+					"skipped": 0,
+					"assertions": [
+						{
+							"message": "Element <body> was visible after 80 milliseconds.",
+							"stackTrace": "",
+							"fullMsg": "",
+							"failure": false
+						}
+					],
+					"timeMs": 1131,
+					"time": "1.131"
+				}
+			},
+			"skipped": [],
+			"time": "1.131",
+			"timestamp": "Mon, 05 Feb 2018 19:23:58 GMT",
+			"group": "performer-create",
+			"tests": 1,
+			"errmessages": [],
+			"failures": 0,
+			"errors": 0
+		}
+	},
+	"assertions": 2
+}

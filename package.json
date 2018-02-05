@@ -4,17 +4,17 @@
     "description": "",
     "main": "nightwatch.js",
     "scripts": {
-        "test": "node nightwatch --group logingroup --group performer-create -e chrome"
+        "test": "node nightwatch -e chrome"
     },
     "author": "",
     "license": "ISC",
     "dependencies": {
-        "nightwatch": "^0.9.19",
-        "nightwatch-custom-commands-assertions": "^1.1.0"
+        "mocha": "^3.0.0",
+        "nightwatch": "^0.9.19"
     },
     "devDependencies": {
-        "mocha": "^5.0.0",
-        "mochawesome": "^3.0.2",
-        "nightwatch-html-reporter": "^2.0.5"
+        "mochawesome": "^3.0.2"
+        "nightwatch": "^0.9.19",
+        "nightwatch-custom-commands-assertions": "^1.1.0"
     }
 }
