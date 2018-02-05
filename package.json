@@ -4,11 +4,15 @@
     "description": "",
     "main": "nightwatch.js",
     "scripts": {
-        "test": "node nightwatch --group logingroup --group performer-create -e chrome"
+        "test": "node nightwatch -e chrome"
     },
     "author": "",
     "license": "ISC",
     "dependencies": {
+        "mocha": "^3.0.0",
         "nightwatch": "^0.9.19"
+    },
+    "devDependencies": {
+        "mochawesome": "^3.0.2"
     }
 }
