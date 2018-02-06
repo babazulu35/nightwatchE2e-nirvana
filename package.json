@@ -13,7 +13,7 @@
         "nightwatch": "^0.9.19"
     },
     "devDependencies": {
-        "mochawesome": "^3.0.2"
+        "mochawesome": "^3.0.2",
         "nightwatch": "^0.9.19",
         "nightwatch-custom-commands-assertions": "^1.1.0"
     }

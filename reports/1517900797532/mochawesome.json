@@ -1,0 +1,150 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2018-02-06T07:06:39.877Z",
+    "end": "2018-02-06T07:08:09.065Z",
+    "duration": 89188,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "passPercentClass": "success",
+    "pendingPercentClass": "danger"
+  },
+  "suites": {
+    "uuid": "5cd107cd-52ab-4e9b-b7d8-161c5881c1d5",
+    "title": "",
+    "fullFile": "",
+    "file": "",
+    "beforeHooks": [],
+    "afterHooks": [],
+    "tests": [],
+    "suites": [
+      {
+        "uuid": "3e821a01-5d89-422c-95fd-eec27382e807",
+        "title": "Nirvana Login Testi",
+        "fullFile": "C:\\Users\\hakan\\Desktop\\Works\\nightwatchE2e-nirvana\\tests\\logingroup\\nirvanaLogin",
+        "file": "\\tests\\logingroup\\nirvanaLogin",
+        "beforeHooks": [
+          {
+            "title": "\"before all\" hook",
+            "fullTitle": "Nirvana Login Testi \"before all\" hook",
+            "timedOut": false,
+            "duration": 0,
+            "pass": false,
+            "fail": false,
+            "pending": false,
+            "code": "done();",
+            "err": {},
+            "isRoot": false,
+            "uuid": "4b0068cc-e416-4c3a-95a2-906a1fbed551",
+            "isHook": true,
+            "skipped": false
+          }
+        ],
+        "afterHooks": [
+          {
+            "title": "\"after all\" hook",
+            "fullTitle": "Nirvana Login Testi \"after all\" hook",
+            "timedOut": false,
+            "duration": 224,
+            "pass": false,
+            "fail": false,
+            "pending": false,
+            "code": "client.end(function() {\n    done();\n});",
+            "err": {},
+            "isRoot": false,
+            "uuid": "930b53b4-6afe-45e0-a179-a903fd70673d",
+            "isHook": true,
+            "skipped": false
+          }
+        ],
+        "tests": [
+          {
+            "title": "Sayfa Yüklenme Testi",
+            "fullTitle": "Nirvana Login Testi Sayfa Yüklenme Testi",
+            "timedOut": false,
+            "duration": 82730,
+            "state": "passed",
+            "speed": "slow",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "context": "\"../../sshot/1517900797532/login.jpg\"",
+            "code": "browser.url(browser.globals.urls.test);\n        browser.waitForElementPresent('app-login', 1000);\n        browser.saveScreenshot('sshot/' + browser.globals.localTimeStamp + '/login.jpg');\n        addContext(this, '../../sshot/' + browser.globals.localTimeStamp + '/login.jpg');",
+            "err": {},
+            "isRoot": false,
+            "uuid": "d14e2da2-350e-460e-9b58-037f270d142e",
+            "isHook": false,
+            "skipped": false
+          },
+          {
+            "title": "Boş Form Gönderimi Hatası",
+            "fullTitle": "Nirvana Login Testi Boş Form Gönderimi Hatası",
+            "timedOut": false,
+            "duration": 1469,
+            "state": "passed",
+            "speed": "slow",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "context": "\"../../sshot/1517900797532/form-gonderim-hatasi.jpg\"",
+            "code": "browser.click('button')\nbrowser.perform((client, done) => {\n    client\n        .useCss()\n        .waitForElementVisible('.alert', 1000)\n        .saveScreenshot('sshot/' + browser.globals.localTimeStamp + '/form-gonderim-hatasi.jpg');\n    done();\n})\naddContext(this, '../../sshot/' + browser.globals.localTimeStamp + '/form-gonderim-hatasi.jpg');",
+            "err": {},
+            "isRoot": false,
+            "uuid": "b89bd044-1eb1-48d9-b08c-12c2953802e5",
+            "isHook": false,
+            "skipped": false
+          },
+          {
+            "title": "Giriş Verilerinin Gönderilmesi ve Girş Başarılı",
+            "fullTitle": "Nirvana Login Testi Giriş Verilerinin Gönderilmesi ve Girş Başarılı",
+            "timedOut": false,
+            "duration": 4747,
+            "state": "passed",
+            "speed": "slow",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "context": "\"../../sshot/1517900797532/giris-basarili.jpg\"",
+            "code": "var data = browser.globals;\nbrowser\n    .click('app-text-input input')\n    .setValue('input[name=username]', data.username)\n    .setValue('input[name=password]', data.password)\n    .setValue('input[name=apiKey]', data.apiKey)\n    .setValue('input[name=terminalId]', data.terminalId)\n    .setValue('input[name=channelCode]', data.channelCode)\n    .setValue('input[name=firmCode]', data.firmCode)\n    .click('button')\n    .pause(2000)\n    .perform(function(client, done) {\n        client\n            .waitForElementPresent('app-index', 1000)\n            .saveScreenshot('sshot/' + browser.globals.localTimeStamp + '/giris-basarili.jpg');\n        done();\n    })\naddContext(this, '../../sshot/' + browser.globals.localTimeStamp + '/giris-basarili.jpg');\nbrowser.pause(1000);",
+            "err": {},
+            "isRoot": false,
+            "uuid": "0400c6f2-c2e2-45c0-a601-03f00ca6da7b",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "d14e2da2-350e-460e-9b58-037f270d142e",
+          "b89bd044-1eb1-48d9-b08c-12c2953802e5",
+          "0400c6f2-c2e2-45c0-a601-03f00ca6da7b"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 88946,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 20000
+      }
+    ],
+    "passes": [],
+    "failures": [],
+    "pending": [],
+    "skipped": [],
+    "duration": 0,
+    "root": true,
+    "rootEmpty": true,
+    "_timeout": 20000
+  },
+  "copyrightYear": 2018
+}
