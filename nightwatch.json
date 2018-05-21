@@ -1,7 +1,7 @@
 {
     "src_folders": ["tests"],
     "output_folder": "reports",
-    "custom_commands_path": "node_modules/nightwatch-custom-commands-assertions/js/commands",
+    "custom_commands_path": ["node_modules/nightwatch-custom-commands-assertions/js/commands", "customCommands"],
     "custom_assertions_path": "node_modules/nightwatch-custom-commands-assertions/js/assertions",
     "page_objects_path": "pageObjects",
     "globals_path": "globals.js",
@@ -37,7 +37,7 @@
                 "enabled": true,
                 "on_failure": false,
                 "on_error": false,
-                "path": "sshot"
+                "path": "reports/sshot"
 
             },
             "desiredCapabilities": {
@@ -55,7 +55,7 @@
                 "on_success": true,
                 "on_failure": true,
                 "on_error": true,
-                "path": "sshot"
+                "path": "reports/sshot"
 
             }
         },

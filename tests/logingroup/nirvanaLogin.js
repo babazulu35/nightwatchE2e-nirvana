@@ -1,7 +1,6 @@
 const addContext = require('mochawesome/addContext');
 describe('Nirvana Login Testi', function() {
     before(function(client, done) {
-
         done();
     });
 
@@ -11,11 +10,11 @@ describe('Nirvana Login Testi', function() {
         });
     });
     it('Sayfa Yüklenme Testi', function(browser) {
-
+        //browser.localStorage();
         browser.url(browser.globals.urls.test);
         browser.waitForElementPresent('app-login', 1000);
-        browser.saveScreenshot('sshot/' + browser.globals.localTimeStamp + '/login.jpg');
-        addContext(this, '../../sshot/' + browser.globals.localTimeStamp + '/login.jpg');
+        browser.saveScreenshot('reports/sshot/' + browser.globals.localTimeStamp + '/login.jpg');
+        addContext(this, '../../reports/sshot/' + browser.globals.localTimeStamp + '/login.jpg');
 
 
     });
@@ -25,11 +24,11 @@ describe('Nirvana Login Testi', function() {
             client
                 .useCss()
                 .waitForElementVisible('.alert', 1000)
-                .saveScreenshot('sshot/' + browser.globals.localTimeStamp + '/form-gonderim-hatasi.jpg');
+                .saveScreenshot('reports/sshot/' + browser.globals.localTimeStamp + '/form-gonderim-hatasi.jpg');
 
             done();
         })
-        addContext(this, '../../sshot/' + browser.globals.localTimeStamp + '/form-gonderim-hatasi.jpg');
+        addContext(this, '../../reports/sshot/' + browser.globals.localTimeStamp + '/form-gonderim-hatasi.jpg');
     });
     it('Giriş Verilerinin Gönderilmesi ve Girş Başarılı', function(browser) {
         var data = browser.globals;
@@ -46,11 +45,11 @@ describe('Nirvana Login Testi', function() {
             .perform(function(client, done) {
                 client
                     .waitForElementPresent('app-index', 1000)
-                    .saveScreenshot('sshot/' + browser.globals.localTimeStamp + '/giris-basarili.jpg');
+                    .saveScreenshot('reports/sshot/' + browser.globals.localTimeStamp + '/giris-basarili.jpg');
 
                 done();
             })
-        addContext(this, '../../sshot/' + browser.globals.localTimeStamp + '/giris-basarili.jpg');
+        addContext(this, '../../reports/sshot/' + browser.globals.localTimeStamp + '/giris-basarili.jpg');
         browser.pause(1000);
     });
 
